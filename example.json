@@ -1,0 +1,36 @@
+var lot = {
+  square: {
+        type: "polygon",
+        points: [
+            { x: 5, y: 10, mark: "w" },
+            { x: 5, y: 20, mark: "s" },
+            { x: 15, y: 20, mark: "e" },
+            { x: 15, y: 10, mark: "n" },
+	    { x: 6, y: 10, mark: "label" },
+	    { x: 7, y: 10, mark: "position::" },
+	    { x: 8, y: 10, mark: "not.printable:" }
+        ],
+	children: {
+           angle: {
+             type: "line",
+             operations: ["o:n:e", "a:5:135", "m:angle"],
+	     corners: ["e", "angle"],
+	     style: "solid"
+	   },
+	   lines: {
+             type: "polygon",
+	     operations: ["o:e:n", "t:5", "m:tail", "r:5", "m:right", "l:2", "m:left", "b:1", "m:back", "l:2", "m:left.back", "y:0.5", "m:yshift", "x:0.5", "m:xshift",
+	                  "o:e:n", "v", "r:3", "m:right.reverse"],
+	     corners: ["tail", "right", "back", "left", "left.back", "yshift", "xshift", "right.reverse"]
+	   },
+	   "indendation": {
+             type: "line",
+	     operations: ["o:right:angle", "c:left.back:back", "mark:cross", "h:0.25", "m:head.cross", 
+		          "o:right:back", "d:1:0.5", "mark:distance", "h:0.25", "m:head.distance",
+			  "o:left.back:left", "n:cross", "m:nearest",
+	                  "o:left.back:left", "p:1:cross", "m:parallel.left.left.back"],
+	     corners: ["cross", "distance", "back", "right", "head.cross", "head.distance", "angle", "left.back", "nearest", "parallel.left.left.back"]
+	   }
+	}
+   }
+};

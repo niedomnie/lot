@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVQ4jaWTPUhCcRTFL/YlRUOR
+Sw6RQwVqg0KE0NCXUNHWENGgUURTtDREZQRCFEFDLg4VQeX7m+JgUEakSUsf6pq9FxQVCYENDjr0
+TkNgUvyFdLjDPdz7Gw7nEDFaJEZpYoR/TpoEWiBilCng+QdSxPP3/BYMZ01Qesr/HJa4FTAF9VC4
+FXyA2q+CKAvYfJr5A1i+H4cEhu6wkQ9oOWmABAZRFtB+rs3quoAG97IACQwjN718gDbQCAkMzudZ
+eN7tWX33bR7Ol1mIsgBLpJ8PMJw1Iy67UOOrRjSzja6wEaagDnefB1D7VYhldmCJ9PEBHaFWXKQc
+IEawxa04/liHP7mKjcdpECOEUg6M3pr5APNlG/YStqwfoixAlAXoTzUgRjhKrmH4uocPGLrqxMrD
+VHbfTyxh63UuZ7flN3EsOgBr9MekSq8SFTmZsEuTmIgN8gFVXiXKDku5qav1VaPeX5c/iYVEuZAm
+5pTJVVydvwDO8ul75ci3CwAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+<head>
+    <meta charset="utf-8"/>
+    <script src="example.json"></script>    
+    <script src="lot.js"></script>    
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+        text {
+            font-size: 4px;
+            cursor: default;
+        }
+        path {
+            stroke: darkblue;
+            stroke-width: 1px;
+            fill: none;
+        }
+        path.current {
+            stroke: red;
+        }
+        path.water {
+            stroke: lightblue;
+            stroke-width: 2px;
+        }
+        path.dash {
+            stroke: lightgray;
+            stroke-dasharray: 5 1;
+        }
+        path.ax {
+            stroke-width: 0.5px;
+            stroke: green;
+            stroke-dasharray: 2 1;
+        }
+        path.none {
+            stroke: white;
+        }
+        line {
+            stroke: lightgray;
+            stroke-width: 0.5px;
+            stroke-dasharray: 1 1;
+        }        
+        line.dash {
+            stroke: darkgray;
+            stroke-dasharray: 5 1;
+        }
+        line.solid {
+            stroke: darkblue;
+            stroke-dasharray: 0;
+        }
+        line.none {
+            stroke: white;
+        }
+        polygon {
+            fill: transparent;
+            stroke-width: 1px;
+            stroke: darkblue;
+        }
+        polygon.dash {
+            stroke-dasharray: 2 2;
+        }
+        polygon.grid {
+            stroke-dasharray: 2 2;
+            fill: lightgray;
+            fill-opacity: 0.4;
+        }
+        polygon.none {
+            stroke: white;
+        }
+        div#info { 
+            font-size: 12pt;
+        }
+        table tbody tr td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="2000">
+    </svg>
+    <div id="info">
+        <table><tbody><tr><td>
+            <pre id="figures"></pre>
+        </td><td>
+            <pre id="points"></pre>
+        </td></tr></tbody></table>
+    </div>
+    <script>
+	main('svg', 'figures', 'points');
+    </script>
+</body>
+</html>
