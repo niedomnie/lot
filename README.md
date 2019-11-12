@@ -18,15 +18,15 @@ New project contains 3 files: lot.js (this library), html file with SVG and lot.
 1. nearest point between point & line
 1. and more minor 
 
-##. Commands 
+## Commands 
 
-#. o - orientation
-#. h - head 
-#. t - tail
-#. b - back
-#. r - right
-#. l - left
-#. v - reverse
-#. c - cross
-#. d - distance
-#. n - nearest
+1. o - orientation
+1. h - head 
+1. t - tail
+1. b - back
+1. r - right
+1. l - left
+1. v - reverse
+1. c - cross
+1. d - distance
+1. n - nearest
