@@ -20,6 +20,7 @@ New project contains 3 files: lot.js (this library), html file with SVG and lot.
 
 ## Commands 
 
+1. m - mark
 1. o - orientation
 1. h - head 
 1. t - tail
@@ -30,3 +31,4 @@ New project contains 3 files: lot.js (this library), html file with SVG and lot.
 1. c - cross
 1. d - distance
 1. n - nearest
+1. p - parallel
