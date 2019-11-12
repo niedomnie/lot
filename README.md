@@ -9,24 +9,24 @@ New project contains 3 files: lot.js (this library), html file with SVG and lot.
 
 ## Transformations groups
 
-#. position on line
-#. position on perpendicular line
-#. position on parallel line
-#. position based on angle and distance
-#. position based on distance from 2 points
-#. positions on intersections of 2 lines
-#. nearest point between point & line
-#. and more minor 
+1. position on line
+1. position on perpendicular line
+1. position on parallel line
+1. position based on angle and distance
+1. position based on distance from 2 points
+1. positions on intersections of 2 lines
+1. nearest point between point & line
+1. and more minor 
 
 ##. Commands 
 
-o - orientation
-h - head 
-t - tail
-b - back
-r - right
-l - left
-v - reverse
-c - cross
-d - distance
-n - nearest
+#. o - orientation
+#. h - head 
+#. t - tail
+#. b - back
+#. r - right
+#. l - left
+#. v - reverse
+#. c - cross
+#. d - distance
+#. n - nearest
