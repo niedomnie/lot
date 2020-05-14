@@ -7,6 +7,9 @@ Positions are float numbers where x positions are on vertical axis (higher on to
 Not special spacial reference used (e.g. EPSC) nor unit definition/conversion.
 New project contains 3 files: lot.js (this library), html file with SVG and lot.json defining what needs to be draw.
 
+## Usage 
+Download the files locally and open example.htm file in a browser to see drawings.
+
 ## Transformations groups
 
 1. position on line
